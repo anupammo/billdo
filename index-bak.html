@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>BillDo - Do your Billing</title>
+</head>
+
+<body>
+    <section class="my-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <form id="items">
+                        <!-- <div class="row mb-2">
+                            <div class="col-12 form-group">
+                                <label class="text-primary">Description</label>
+                                <textarea class="form-control shadow-none"></textarea>
+                            </div>
+                            <div class="col-12 col-sm-4 form-group">
+                                <label class="text-primary">Price</label>
+                                <input type="text" class="form-control shadow-none">
+                            </div>
+                            <div class="col-12 col-sm-4 form-group">
+                                <label class="text-primary">Quantity</label>
+                                <input type="number" min="1" max="100" class="form-control shadow-none">
+                            </div>
+                            <div class="col-12 col-sm-4 form-group">
+                                <label class="text-primary">Total</label>
+                                <input type="text" class="form-control shadow-none">
+                            </div>
+                        </div> -->
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <button type="button" class="btn btn-primary shadow-none" onclick="addItem()">+ Add
+                        Item</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function addItem() {
+            document.getElementById("items").innerHTML = "<div class='row'><div class='col-12 form-group'><textarea class='form-control shadow-none'></textarea></div><div class='col-12 col-sm-4 form-group'><input type='number' class='form-control shadow-none' placeholder='Price'></div><div class='col-12 col-sm-4 form-group'><input type='number' class='form-control shadow-none' placeholder='Quantity'></div><div class='col-12 col-sm-4 form-group'><input type='number' class='form-control shadow-none' placeholder='Amount'></div></div>";
+        }
+    </script>
+    <script>
+        // function addItem() {
+        //     var divRow = document.createElement("DIV");
+        //     var divCol1 = document.createElement("DIV");
+        //     var divCol2 = document.createElement("DIV");
+        //     var divCol3 = document.createElement("DIV");
+        //     var divCol4 = document.createElement("DIV");
+        //     var textaArea = document.createElement("TEXTAREA");
+        //     var textBox1 = document.createElement("INPUT");
+        //     var textBox2 = document.createElement("INPUT");
+        //     var textBox3 = document.createElement("INPUT");
+
+        //     divRow.classList.add("row", "mb-2");
+        //     divRow.setAttribute("id", "itemRow1")
+        //     document.getElementById("items").appendChild(divRow);
+
+        //     divCol1.classList.add("col-12", "form-group");
+        //     divCol1.setAttribute("id", "item1Col1")
+        //     document.getElementById("itemRow1").appendChild(divCol1);
+
+        //     textaArea.classList.add("form-control", "shadow-none");
+        //     textaArea.setAttribute("placeholder", "Product descriptions")
+        //     document.getElementById("item1Col1").appendChild(textaArea);
+
+        //     divCol2.classList.add("col-12", "col-sm-4", "form-group");
+        //     divCol2.setAttribute("id", "item1Col2")
+        //     document.getElementById("itemRow1").appendChild(divCol2);
+
+        //     textBox1.classList.add("form-control", "shadow-none");
+        //     textBox1.setAttribute("type", "number")
+        //     textBox1.setAttribute("placeholder", "Price")
+        //     document.getElementById("item1Col2").appendChild(textBox1);
+
+        //     divCol3.classList.add("col-12", "col-sm-4", "form-group");
+        //     divCol3.setAttribute("id", "item1Col3")
+        //     document.getElementById("itemRow1").appendChild(divCol3);
+
+        //     textBox2.classList.add("form-control", "shadow-none");
+        //     textBox2.setAttribute("type", "number")
+        //     textBox2.setAttribute("placeholder", "Quantity")
+        //     document.getElementById("item1Col3").appendChild(textBox2);
+
+        //     divCol4.classList.add("col-12", "col-sm-4", "form-group");
+        //     divCol4.setAttribute("id", "item1Col4")
+        //     document.getElementById("itemRow1").appendChild(divCol4);
+
+        //     textBox3.classList.add("form-control", "shadow-none");
+        //     textBox3.setAttribute("type", "number")
+        //     textBox3.setAttribute("placeholder", "Total")
+        //     document.getElementById("item1Col4").appendChild(textBox3);
+        // }
+    </script>
+</body>
+
+</html>
